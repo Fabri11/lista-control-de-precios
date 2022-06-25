@@ -1,0 +1,41 @@
+
+{% extends 'layout.html' %}
+
+{% block content %}
+
+<div class="container d-flex justify-content-center align-items-center" style="color: #F0F0F0;margin-top: 30px;">
+    <h1>Proveedores de Local</h1>
+</div>
+
+
+<div class="container d-flex justify-content-center align-items-center" style="max-width: 1100px; width: 100%;">
+
+    <div class="card col-md-4 offset-md-4" style="background-color: #121212;width: 18rem; margin: 10px; overflow: hidden; cursor: default;">
+        <img src="../assets/madera-proveedor.jpg" class="card-img-top" alt="madera">
+        <div class="card-body">
+          <h5 class="card-title">Proveedor de madera.</h5>
+          <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellendus, nam?</p>
+          <a href="{% url 'madera' %}" class="btn btn-secondary">Entrar</a>
+        </div>
+    </div>
+
+    <div class="card col-md-4 offset-md-4" style="background-color: #121212;width: 18rem; margin: 10px;overflow: hidden; cursor: default;">
+        <img src="../assets/muebles-proveedores.jpg" class="card-img-top" alt="muebles">
+        <div class="card-body">
+          <h5 class="card-title">Proveedor de muebles.</h5>
+          <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellendus, nam?</p>
+          <a href="{% url 'muebles' %}" class="btn btn-secondary">Entrar</a>
+        </div>
+    </div>
+
+    <div class="card col-md-4 offset-md-4" style="background-color: #121212;width: 18rem; margin: 10px;overflow: hidden; cursor: default;">
+        <img src="../assets/articulos-proveedores.jpg" class="card-img-top" alt="Articulos">
+        <div class="card-body">
+          <h5 class="card-title">Proveedor de artículos.</h5>
+          <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellendus, nam?</p>
+          <a href="{% url 'articulos' %}" class="btn btn-secondary">Entrar</a>
+        </div>
+    </div>
+</div>
+
+{% endblock %}
